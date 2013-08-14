@@ -1,0 +1,14 @@
+{
+  "name": "mini-sse",
+  "version": "0.0.0",
+  "description": "Just a minimal sse example",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jan Krutisch",
+  "license": "BSD",
+  "dependencies": {
+    "sse": "0.0.5"
+  }
+}

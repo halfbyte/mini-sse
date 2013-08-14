@@ -1,0 +1,19 @@
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <title>SSE-Test</title>
+  <script type="text/javascript" charset="utf-8">
+  function onLoad() {}
+    var es = new EventSource("http://localhost:8080/sse");
+    es.addEventListener('tick', function(event) {
+      console.log("tick", event);
+    });
+    es.addEventListener('test', function(event) {
+      console.log("random", event);
+    });    
+  </script>
+</head>
+<body  onload="onLoad();">
+  <h1>Aha!</h1>
+</body>
+</html>
